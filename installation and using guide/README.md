@@ -7,7 +7,8 @@ Download it form the official website. https://www.scala-sbt.org/download.html
 # Step3: Run PDFFigures 2.0 with python
 Add a python file in the folder. Use following code to give sbt command, assign input path (where your pdfs are) and output path(where you want to store the result).
 
-```import os
+```
+import os
 import subprocess
 
 def pdffigure2(input_path, output_path):
