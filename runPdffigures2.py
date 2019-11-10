@@ -15,4 +15,5 @@ def pdffigure2(input_path, output_path):
                                       shell=True, universal_newlines=True).communicate()
     print('finish extracting %s to %s' % (input_path, output_path))
 
-pdffigure2("/Users/cheng-shanhsieh/Downloads/testpdf", '~/Desktop/output/')
+pdffigure2("/Users/cheng-shanhsieh/Desktop/HWR/AssistantJob/pdffigures2/test_files",
+           '~/Desktop/HWR/AssistantJob/pdffigures2/output/')
