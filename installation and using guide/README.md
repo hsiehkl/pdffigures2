@@ -24,7 +24,8 @@ def pdffigure2(input_path, output_path):
                                       shell=True, universal_newlines=True).communicate()
     print('finish extracting %s to %s' % (input_path, output_path))
 
-pdffigure2("/your folder path", '/output path')```
+pdffigure2("/your folder path", '/output path')
+```
 
 # Step4: Edit Java code (if applicable)
 If you get the error, "value EXIT_ON_CLOSE is not a member of object javax.swing.JFrame", when running the code above, then go to VisualLogger.scala file and change `frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)` to `frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)`. Run the code again, it should solve the problem. See more on: https://github.com/scala/bug/issues/10596
